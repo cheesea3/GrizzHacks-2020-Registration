@@ -7,6 +7,13 @@
     <meta name="author" content="Daiyaan Ijaz">
     <title>GrizzHacks</title>
 
+    <!-- CUSTOM -->
+    <!-- Custom Scripts -->
+    <!-- Custom Styles -->
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/custom/button.css" rel="stylesheet">
+    <!-- /CUSTOM -->
+
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -16,8 +23,7 @@
     <style>
 
     </style>
-    <!-- Custom styles -->
-    <link href="css/site.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,13 +32,17 @@
     <a class="navbar-brand" href="index.php">Grizzhacks 5</a>
 </nav>
 
+<!-- .container -->
 <div class="container" style="padding: 40px;">
         <h1>GrizzHacks 5 Registration</h1>
         <p class="lead">Please complete the below form to register for GrizzHacks 5 at Oakland University.<br> GrizzHacks is open to all graduate, undergraduate, high school, and middle school students, as well as those who have graduated within the last calendar year. You don’t need to be an engineering major; If you have a passion for technology and the drive to change the world, you belong at GrizzHacks.</p>
-    <button class="button" style="font-size:14px;" onclick="window.location.href= 'https\:\/\/forms.gle/E4EHr6GWZAfF41qu5'">Application Open Now!</button>
+   <div class="">
+    <button class="cbutton noselect" style=" font-size:14px;" onclick="window.location.href='https\:\/\/forms.gle/E4EHr6GWZAfF41qu5'">Application Open Now!</button>
+    <div>
+    </div>
 
-
-</div><!-- /.container -->
+</div>
+    <!-- /.container -->
 
 
 
@@ -57,7 +67,7 @@
 
 
 
-
+<!-- Footer -->
 <footer class="footer mt-auto py-3" style="padding-top: 20px; display:block; position:relative; bottom:0; border-top: 1px solid #225378; margin-bottom:0;">
     <div class="container">
 
