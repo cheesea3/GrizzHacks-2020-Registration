@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Daiyaan Ijaz">
-    <title>Starter Template · Bootstrap</title>
+    <title>GrizzHacks</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -17,18 +17,19 @@
 
     </style>
     <!-- Custom styles -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom: 1px solid #000000">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="border-bottom: 4px solid #0A1172">
     <a class="navbar-brand" href="index.php">Grizzhacks 5</a>
 </nav>
 
-<div class="container">
-        <h1> starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<div class="container" style="padding: 40px;">
+        <h1>GrizzHacks 5 Registration</h1>
+        <p class="lead">Please complete the below form to register for GrizzHacks 5 at Oakland University.<br> GrizzHacks is open to all graduate, undergraduate, high school, and middle school students, as well as those who have graduated within the last calendar year. You don’t need to be an engineering major; If you have a passion for technology and the drive to change the world, you belong at GrizzHacks.</p>
+    <button class="button" style="font-size:14px;" onclick="window.location.href= 'https\:\/\/forms.gle/E4EHr6GWZAfF41qu5'">Application Open Now!</button>
 
 
 </div><!-- /.container -->
@@ -36,10 +37,23 @@
 
 
 
+<!-- Login Module -->
+<button class="open-button" onclick="openForm()">Log In</button>
 
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
 
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
 
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
 
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
 
 
 
@@ -52,7 +66,6 @@
         </div>
     </div>
 </footer>
-
 
 </body>
 
