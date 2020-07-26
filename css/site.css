@@ -1,6 +1,62 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    footer {
+        background-color: #fff3cd;
+    }
+    main {
+        background-color: #fff3cd;
+    }
+    nav {
+        background-color: #fff3cd;
+    }
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    line-height: 20px;
+    height: 60px;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    color: black!important;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none;
+}
+
 /* Button used to open the contact form - fixed at the bottom of the page */
 .open-button {
     background-color: #0A1172 ;
@@ -77,6 +133,34 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 
 
+/* Custom touch to a button t */
+.cbutton {
+    -webkit-font-smoothing: antialiased;
+    background-color: #222;
+    border: none !important;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    outline: 0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.1s ease-out;
+    transition: background-color 0.5s ease-out;
+}
+.cbutton:hover {
+    background-color: #90feb5;
+    color: #fff;
+    outline: 0;
+}
+.cbutton:active {
+    transform: scale(.95);
+    border:0;
+    outline: 0;
+}
 
 /* This makes the element change colors  */
 
@@ -96,3 +180,6 @@ div .hue {
         filter: hue-rotate(360deg);
     }
 }
+
+
+

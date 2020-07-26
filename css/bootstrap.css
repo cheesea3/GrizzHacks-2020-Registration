@@ -4334,18 +4334,7 @@ input[type="button"].btn-block {
   display: block;
 }
 
-.navbar {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-}
+
 
 .navbar .container,
 .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
@@ -4357,22 +4346,6 @@ input[type="button"].btn-block {
   align-items: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-.navbar-brand {
-  text-transform: uppercase;
-  color: black!important;
-  letter-spacing: 2px;
-  margin-top: 2px;
-  float: left;
-  padding: 17.5px 15px;
-  font-size: 18px;
-  line-height: 20px;
-  height: 55px;
-}
-
-.navbar-brand:hover, .navbar-brand:focus {
-  text-decoration: none;
 }
 
 .navbar-nav {
