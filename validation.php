@@ -1,26 +1,33 @@
 <?php
-$nameErr = $emailErr = $passErr = "";
 $name = $email = $password = "";
+$nameErr = $emailErr = $passErr  = "";
+
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //name
     if (empty($_POST["name"])) {
         $nameErr = "Name is required";
     } else {
-        $name = test_input($_POST["name"]);
-        // check if name only contains letters and whitespace
+        $name = $_POST["name"];
         if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
             $nameErr = "Only letters and white space allowed";
         }
     }
 
+    //email
     if (empty($_POST["email"])) {
-        $emailErr = "Email is required";
+        $emailErr = "Name is required";
     } else {
-        $email = test_input($_POST["email"]);
-        // check if e-mail address is well-formed
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $emailErr = "Invalid email format";
-        }
+        $email = $_POST["email"];
     }
+
+    //password
+    if (empty($_POST["password"])) {
+        $passErr = "Password is required";
+    } else {
+        $password = $_POST["password"];
+    }
+
 }
+?>

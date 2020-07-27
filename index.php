@@ -1,4 +1,4 @@
-<?php require 'validation.php'?>
+
 <!doctype html>
 <html lang="en">
 <head>
