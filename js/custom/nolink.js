@@ -88,5 +88,10 @@ $(document).ready(function () {
             }
         }
 
+        //prevent resubmit on refresh and back button
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+
 
 });
