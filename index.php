@@ -78,15 +78,32 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div style="align-content: center;">
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <button type="button" class="cbutton hue" style="font-size:14px;" data-dismiss="modal" data-toggle="modal" data-target="#signin-or-up"><i class="fas fa-arrow-left"></i></button>
+                        <div class="modal-body hue">
+                            <a href="" class="hue" style="margin-right: 98%; margin-left:2%;" data-dismiss="modal" data-toggle="modal" data-target="#signin-or-up"><i class="fas fa-arrow-left"></i></a>
+                            <div class="input-content">
+
+                                <div class="inputbox">
+                                    <div class="inputbox-content">
+                                        <input id="username" type="text" required/>
+                                        <label for="username">Username</label>
+                                        <div class="underline"></div>
+                                    </div>
                                 </div>
-                                <div class="col-sm-8">
-                                    <h1 class="modal-title" style="padding-bottom: 10px">Sign in</h1>
+
+                                <div class="inputbox">
+                                    <div class="inputbox-content">
+                                        <input id="password" type="password" required/>
+                                        <label for="password">Password</label>
+                                        <span class="underline"></span>
+                                    </div>
                                 </div>
+
+                                <a href="" style="margin-left: 95%; padding-top: 30px; margin-right:5%;"><i class="fas fa-arrow-right"></i></a>
                             </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -97,20 +114,48 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div style="align-content: center;">
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <button type="button" class="cbutton hue" style="font-size:14px;" data-dismiss="modal" data-toggle="modal" data-target="#signin-or-up"><i class="fas fa-arrow-left"></i></button>
+                        <div class="modal-body hue">
+                                    <a href="" class="hue" style="margin-right: 98%; margin-left:2%;" data-dismiss="modal" data-toggle="modal" data-target="#signin-or-up"><i class="fas fa-arrow-left"></i></a>
+                                <div class="input-content">
+
+                                        <div class="inputbox">
+                                            <div class="inputbox-content">
+                                                <input id="input0" type="text" required/>
+                                                <label for="input0">Username</label>
+                                                <div class="underline"></div>
+                                            </div>
+                                        </div>
+
+                                    <div class="inputbox">
+                                        <div class="inputbox-content">
+                                            <input id="email" type="password" required/>
+                                            <label for="email">Email</label>
+                                            <span class="underline"></span>
+                                        </div>
+                                    </div>
+
+                                        <div class="inputbox">
+                                            <div class="inputbox-content">
+                                                <input id="input1" type="password" required/>
+                                                <label for="input1">Password</label>
+                                                <span class="underline"></span>
+                                            </div>
+                                        </div>
+
+                                            <a href="" style="margin-left: 95%; padding-top: 30px; margin-right:5%;"><i class="fas fa-arrow-right"></i></a>
                                 </div>
-                                <div class="col-sm-8">
-                                    <h1 class="modal-title" style="padding-bottom: 10px">Sign up</h1>
-                                </div>
-                                </div>
+
+
+
+
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
 </main>
