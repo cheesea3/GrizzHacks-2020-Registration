@@ -35,7 +35,7 @@
 
 <!-- Navbar -->
 <nav class="navbar noselect" style="border-bottom: 4px solid #0A1172">
-    <a class="navbar-brand" href="index.php" id='no-link'>Grizzhacks 5</a>
+    <a class="navbar-brand" href="" id='no-link'>Grizzhacks 5</a>
 </nav>
 <!-- /Navbar -->
 
@@ -43,10 +43,30 @@
 <main class="Site-content">
 <!-- .container -->
     <div class="container">
-        <h1 class="noselect">GrizzHacks 5 Registration</h1>
+        <div class="noselect">
+        <h1>GrizzHacks 5 Registration</h1>
         <p class="lead">Please complete the below form to register for GrizzHacks 5 at Oakland University.<br> GrizzHacks is open to all graduate, undergraduate, high school, and middle school students, as well as those who have graduated within the last calendar year. You don’t need to be an engineering major; If you have a passion for technology and the drive to change the world, you belong at GrizzHacks.</p>
-   <button onclick="window.location.href= 'https\:\/\/forms.gle/E4EHr6GWZAfF41qu5'" class="cbutton noselect" style="font-size:14px;">Application Open Now!</button>
-    <!-- /.container -->
+
+            <button type="button" class="cbutton hue" style="font-size:14px;" data-toggle="modal" data-target="#loginorregister" >Application Open Now!</button>
+
+            <div id="loginorregister" class="modal animated fade">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="container" style="align-content: center;">
+                            <div class="modal-body">
+                            <h1 class="modal-title">Do you have an account?</h1>
+
+                            <button class="cbutton hue">Yes</button>
+                            <button class="cbutton hue">No</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- /.container -->
 
 <!-- Login Module -->
 <!-- /Login Module -->
@@ -57,10 +77,14 @@
 <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
+            <span class="text-muted">GrizzHacks 5 - 2020</span>
         </div>
     </footer>
 <!-- Footer -->
+
+
+<!-- Makes the site go zoom -->
+<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
 </body>
 

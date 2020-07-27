@@ -164,7 +164,7 @@ body {
 
 /* This makes the element change colors  */
 
-div .hue {
+.hue {
     animation: hue-rotate 10s linear infinite;
 }
 
@@ -180,6 +180,22 @@ div .hue {
         filter: hue-rotate(360deg);
     }
 }
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+
+}
+
+
+
+.modal-body {
+    text-align: center;
+}
+
+
+
 
 
 
