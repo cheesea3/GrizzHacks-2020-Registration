@@ -1,3 +1,4 @@
+<?php require 'validation.php'?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -26,9 +27,8 @@
     <!-- /Core -->
 
     <!-- Inline CSS -->
-    <style>
 
-    </style>
+
 
 </head>
 
@@ -46,7 +46,7 @@
 
     <div class="container">
         <div class="noselect">
-        <h1>GrizzHacks 5 Registration</h1>
+            <h1>GrizzHacks 5 Registration <div class="hint hue">OPEN</div></h1>
         <p class="lead">Please complete the below form to register for GrizzHacks 5 at Oakland University.<br> GrizzHacks is open to all graduate, undergraduate, high school, and middle school students, as well as those who have graduated within the last calendar year. You don’t need to be an engineering major; If you have a passion for technology and the drive to change the world, you belong at GrizzHacks.</p>
 
             <button type="button" class="cbutton hue" data-toggle="modal" data-target="#signin-or-up" >Application Open Now!</button>
@@ -109,6 +109,9 @@
                 </div>
             </div>
         </div>
+    <style>
+        .error {color: #FF0000;}
+    </style>
 
         <div id="sign-up" class="modal fade">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -116,8 +119,8 @@
                     <div style="align-content: center;">
                         <div class="modal-body hue">
                                     <a href="" class="hue" style="margin-right: 98%; margin-left:2%;" data-dismiss="modal" data-toggle="modal" data-target="#signin-or-up"><i class="fas fa-arrow-left"></i></a>
-                                <div class="input-content">
-
+                            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                            <div class="input-content">
                                         <div class="inputbox">
                                             <div class="inputbox-content">
                                                 <input id="input0" type="text" required/>
@@ -144,7 +147,7 @@
 
                                             <a href="" style="margin-left: 95%; padding-top: 30px; margin-right:5%;"><i class="fas fa-arrow-right"></i></a>
                                 </div>
-
+                            </form>
 
 
 
@@ -156,7 +159,16 @@
             </div>
         </div>
 
-
+    <div class="container"
+    <?php include_once('register.php');?>
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+</div>
 
 </main>
 <!-- Content -->
