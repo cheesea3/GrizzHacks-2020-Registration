@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+//HIDE LINK ON AN ELEMENT
     setTimeout(function () {
 
         $('a[href]#no-link').each(function () {
@@ -15,5 +15,17 @@ $(document).ready(function () {
         });
 
     }, 500);
+
+
+//APPLICATION OPEN NOW!
+    $(document).on("click",".yes",function(){
+        $('#signin-or-up').modal('hide');
+        $('#sign-in').modal('show');
+    });
+
+    $(document).on("click",".no",function(){
+        $('#signin-or-up').modal('hide');
+        $('#sign-up').modal('show');
+    });
 
 });

@@ -149,12 +149,14 @@ body {
     padding: 20px 40px;
     text-transform: uppercase;
     transition: all 0.1s ease-out;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-in;
+    transition: transform 0.2s ease-in;
 }
 .cbutton:hover {
     background-color: #90feb5;
     color: #fff;
     outline: 0;
+    transform: scale(1.015);
 }
 .cbutton:active {
     transform: scale(.95);
@@ -181,13 +183,22 @@ body {
     }
 }
 
+.no-blur {
+    position: absolute;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+
 
 .modal {
     position: absolute;
     top: 50%;
 
 }
-
 
 
 .modal-body {
