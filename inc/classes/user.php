@@ -6,13 +6,13 @@ class user
     private $name;
     private $email;
     private $password;
+    private $encrypted;
 
 
-    function __construct($name, $email, $password, $date){
+    function __construct($name, $email, $password){
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
-        $this->date = $date;
     }
 
     /**
@@ -31,7 +31,4 @@ class user
         return $this->password;
     }
 
-    function getRegistrationDate(){
-        return $this->date;
-    }
 }

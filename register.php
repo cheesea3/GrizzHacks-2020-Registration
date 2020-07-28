@@ -69,11 +69,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php
 require "inc/classes/user.php";
-$user = new User("$name", "$email", $password, $date);
-echo  $user->getName()."<br>".
- $user->getEmail()."<br>".
- $user->getPassword();
-$user->getRegistrationDate();
+$user = new User("$name", "$email", $password);
+//bcrpyt encryption
+$hash = password_hash($user->getPassword(), PASSWORD_BCRYPT);
 ?>
 
 
