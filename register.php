@@ -1,5 +1,4 @@
 <?php
-require_once ("inc/conn.php");
 
 $name = $email = $password = "";
 $nameErr = $emailErr = $passErr  = "*";
@@ -72,6 +71,18 @@ require "inc/classes/user.php";
 $user = new User("$name", "$email", $password);
 //bcrpyt encryption
 $hash = password_hash($user->getPassword(), PASSWORD_BCRYPT);
+$username = $user->getName();
+$emailz = $user->getEmail();
+require_once ("inc/conn.php");
+try {
+$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn->exec("INSERT INTO Users (username, password, email) VALUES ('$username','$hash','$emailz')");
+} catch(PDOException $e) {
+    echo $sql . "<br>" . $e->getMessage();
+}
+
+$conn = null;
 ?>
 
 

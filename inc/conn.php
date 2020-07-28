@@ -23,17 +23,15 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // sql to create table, password char(60) to hold bcrypt
-    $sql = "CREATE TABLE IF NOT EXISTS users (
+    $sql = "CREATE TABLE IF NOT EXISTS Users (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(30) NOT NULL,
   password CHAR(60) NOT NULL,
   email VARCHAR(50),
   reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
   )";
-
     // use exec() because no results are returned
     $conn->exec($sql);
-    echo "Table MyGuests created successfully";
 } catch(PDOException $e) {
     echo $sql . "<br>" . $e->getMessage();
 }

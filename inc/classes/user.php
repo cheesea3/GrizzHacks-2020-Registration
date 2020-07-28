@@ -6,7 +6,6 @@ class user
     private $name;
     private $email;
     private $password;
-    private $encrypted;
 
 
     function __construct($name, $email, $password){
@@ -27,7 +26,7 @@ class user
         return $this->email;
     }
 
-    function getPassword(){
+    function getPassword() {
         return $this->password;
     }
 
