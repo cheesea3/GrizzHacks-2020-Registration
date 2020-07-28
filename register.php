@@ -1,6 +1,12 @@
 <?php
+require_once ("inc/conn.php");
+
 $name = $email = $password = "";
 $nameErr = $emailErr = $passErr  = "*";
+
+// Return current date
+$date = date('d-m-y h:i:s');
+echo $date;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //name
@@ -63,10 +69,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <?php
 require "inc/classes/user.php";
-$user = new User("$name", "$email", $password);
+$user = new User("$name", "$email", $password, $date);
 echo  $user->getName()."<br>".
  $user->getEmail()."<br>".
  $user->getPassword();
+$user->getRegistrationDate();
 ?>
 
 

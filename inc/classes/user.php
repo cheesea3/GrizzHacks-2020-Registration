@@ -8,10 +8,11 @@ class user
     private $password;
 
 
-    function __construct($name, $email, $password ){
+    function __construct($name, $email, $password, $date){
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
+        $this->date = $date;
     }
 
     /**
@@ -31,7 +32,6 @@ class user
     }
 
     function getRegistrationDate(){
-        $mydate=getdate(date("U"));
-        return "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+        return $this->date;
     }
 }
