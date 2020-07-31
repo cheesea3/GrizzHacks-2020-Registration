@@ -1,8 +1,5 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password= "";
-$dbname= "grizzhacks";
+require_once "../../config/database.php";
 
 try {
     $conn = new PDO("mysql:host=$servername", $username, $password);
@@ -36,5 +33,4 @@ try {
     echo $sql . "<br>" . $e->getMessage();
 }
 
-$conn = null;
 
