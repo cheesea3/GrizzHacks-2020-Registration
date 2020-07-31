@@ -9,7 +9,6 @@ $asterik = "*";
 
 
 <div class="input-content">
-eerw
     <form class="input-content" name="session" method="post" action="inc/classes/registration.php">
         <div class="inputbox">
             <div class="inputbox-content">
