@@ -4,7 +4,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["name"])) {
         $nameErr = "* Name is required";
     } else {
+        //temporarily set variable to search and see if value exists in db already
+        $namepass = $_POST["username"];
+        //query to select, avoided using data variable in query, instead... a placeholder
+        $conn->prepare("SELECT * FROM users WHERE email=?");
+
+        //if all is well, variable will be set after validation
         $name = $_POST["name"];
+
         $namepass = true;
         if (!preg_match("/^[a-zA-Z ]*$/", $name)) {
             $nameErr = "* Only letters and white space allowed";

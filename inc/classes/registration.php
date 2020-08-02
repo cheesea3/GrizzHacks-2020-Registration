@@ -22,7 +22,7 @@ if ($namepass && $emailpass && $passwordpass === true) {
     }
     //mail to user
     $headers = 'From: noreply@grizzhacks.com';
-    mail($email, "dd", "Hello $name,\r\nThank you for registering. Don't forget too log back in to apply for GrizzHacks 5 and also upload your resume.\r\nFrom,\r\nThe GrizzHacks Team", $headers);
+    mail($email, "Thank you for registering to GrizzHacks", "Hello $name,\r\nThank you for registering. Don't forget too log back in to apply for GrizzHacks 5 and also upload your resume.\r\nFrom,\r\nThe GrizzHacks Team", $headers);
 
 
 } else {
