@@ -9,7 +9,7 @@ $asterik = "*";
 
 
 <div class="input-content">
-    <form class="input-content" name="session" method="post" action="inc/classes/registration.php">
+    <form class="input-content" name="session" method="post" action="../../inc/classes/registration.php">
         <div class="inputbox">
             <div class="inputbox-content">
                 <input id="name" type="text" name="name"  value="<?php echo $name;?>" required/>
