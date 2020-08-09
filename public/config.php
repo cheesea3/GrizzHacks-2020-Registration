@@ -7,4 +7,4 @@ define("DB_NAME", "Grizzhacks");
 
 //define URL
 define("ROOT_PATH", "/");
-define("ROOT_URL", "http://localhost/public");
+define("ROOT_URL", "http://localhost/grizzhacks/public");

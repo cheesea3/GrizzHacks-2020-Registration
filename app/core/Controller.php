@@ -21,6 +21,7 @@ abstract class Controller{
     $view = '../app/views/'.get_class($this). '/'. $this->action.'.php';
     if($fullview) {
         //load main layout file that wraps around our view.
+        
         require '../app/views/main.php';
 
     } else {
