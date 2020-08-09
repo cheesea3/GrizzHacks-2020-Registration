@@ -1,9 +1,11 @@
 <?php
 //extends the core controller ot access protected stuff
-class Home extends Controller
+class Users extends Controller
 {
-    protected function index(){
-        $viewmodel = new HomeModel();
+    protected function index()
+    {
+        $viewmodel = new UserModel();
         $this->returnView($viewmodel->Index(), true);
     }
 }
+

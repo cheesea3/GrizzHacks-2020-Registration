@@ -18,10 +18,11 @@ abstract class Controller{
     //return view
     protected function returnView($viewmodel, $fullview){
         //so if we have a user class we want a user folder inside our view
-    $view = 'views/'.get_class($this). '/'. $this->action.'.php';
+    $view = '../app/views/'.get_class($this). '/'. $this->action.'.php';
     if($fullview) {
         //load main layout file that wraps around our view.
-        require('views/main.php');
+        require '../app/views/main.php';
+
     } else {
         require($view);
     }

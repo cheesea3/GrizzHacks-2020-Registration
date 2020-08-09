@@ -67,7 +67,7 @@ class App {
     //trim gets rid of random stuff so if i trimmed 12314fasf on f then it would return 12314as
     public function parseUrl(){
     //check if this url is set
-
+//this has been taken care of .htaccess
     }
 
 }

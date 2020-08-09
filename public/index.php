@@ -3,6 +3,11 @@
 
 //requires initialization file stored within app. not necessary but good to separate.
 //This file requires all the core components that we'll need.
+
+///database
+require_once 'config.php';
+
+//app
 require_once '../app/init.php';
 
 
