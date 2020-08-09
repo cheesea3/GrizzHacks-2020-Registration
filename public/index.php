@@ -5,6 +5,5 @@
 //This file requires all the core components that we'll need.
 require_once '../app/init.php';
 
-//creates a new app, instance. So basically the require_once above reads init.php and then that file reads App.php
-$app = new App;
+
 
