@@ -6,4 +6,19 @@ class UserModel extends Model{
         $rows = $this->resultSet();
         return $rows;
     }
+
+
+    public function Register(){
+        $this->query('SELECT * FROM users');
+        $rows = $this->resultSet();
+        return $rows;
+    }
+
+    public function Login(){
+        $this->query('SELECT * FROM users');
+        $rows = $this->resultSet();
+        return $rows;
+    }
+
+
 }

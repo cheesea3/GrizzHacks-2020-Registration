@@ -6,7 +6,7 @@ abstract class Controller{
 
     public function __construct($action, $request)
     {
-        //asign properties
+        //assign properties
         $this->action = $action;
         $this->request = $request;
     }
@@ -21,7 +21,7 @@ abstract class Controller{
     $view = '../app/views/'.get_class($this). '/'. $this->action.'.php';
     if($fullview) {
         //load main layout file that wraps around our view.
-        
+
         require '../app/views/main.php';
 
     } else {
