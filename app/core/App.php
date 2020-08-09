@@ -7,15 +7,6 @@ class App {
     //protected means that it can only be accessed if the class inherits it. it will result in an error outside of said
     //class.
 
-    //default controller
-    protected $zcontroller = 'home';
-    //default method
-    protected $zaction = 'index';
-    //default parameter
-    protected $zrequest = [];
-
-
-
     //default controller is home and default action is index
 
     private $controller;
