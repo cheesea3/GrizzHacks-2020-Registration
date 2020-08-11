@@ -9,7 +9,8 @@
 
     <!-- CUSTOM -->
     <!-- Custom Styles -->
-    <link href="https://cdn.imperfectgamers.org/inc/assets/grizzhacks/css/site.css" rel="stylesheet">
+  <link href="https://cdn.imperfectgamers.org/inc/assets/grizzhacks/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo ROOT_URL; ?>/assets/css/site.css" rel="stylesheet">
     <!-- Custom Styles -->
     <!-- Custom Scripts -->
     <!-- /CUSTOM -->
@@ -22,7 +23,6 @@
 
     <!-- Core -->
     <!-- Styles -->
-    <link href="https://cdn.imperfectgamers.org/inc/assets/grizzhacks/css/bootstrap.css" rel="stylesheet">
     <!-- Scripts -->
     <script src="https://raw.githubusercontent.com/swup/preload-plugin/master/dist/SwupPreloadPlugin.min.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
@@ -56,9 +56,9 @@
 <main id="swup" class="Site-content transition-fade">
 <div class="container">
 
-    <div class="row">
+
         <?php require($view); ?>
-    </div>
+
 </div>
 </main>
 <!-- /container -->
@@ -79,5 +79,5 @@
 </body>
 
 <!--- no link -->
-<script src="https://cdn.imperfectgamers.org/inc/assets/grizzhacks/js/custom/nolink.js"></script>
+<script src="<?php echo ROOT_URL; ?>/assets/js/main.js"></script>
 </html>
