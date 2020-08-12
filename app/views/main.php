@@ -9,7 +9,9 @@
 
     <!-- CUSTOM -->
     <!-- Custom Styles -->
-  <link href="https://cdn.imperfectgamers.org/inc/assets/grizzhacks/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo ROOT_URL; ?>/assets/css/form/container.css" rel="stylesheet">
+    <link href="<?php echo ROOT_URL; ?>/assets/css/form/input.css" rel="stylesheet">
+    <link href="<?php echo ROOT_URL; ?>/assets/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo ROOT_URL; ?>/assets/css/site.css" rel="stylesheet">
     <!-- Custom Styles -->
     <!-- Custom Scripts -->
@@ -56,9 +58,7 @@
 <main id="swup" class="Site-content transition-fade">
 <div class="container">
 
-
-        <?php require($view); ?>
-
+    <?php require($view); ?>
 </div>
 </main>
 <!-- /container -->

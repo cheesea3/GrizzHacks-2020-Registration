@@ -1,0 +1,342 @@
+.FormContainer {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 960px;
+}
+.loginFormContainer {
+    height: 45%;
+    width: 60%;
+    display: flex;
+    box-shadow: 0px 6px 34px 0px rgb(0, 0, 0, 0.35);
+}
+
+.leftDiv {
+    height: 100%;
+    width: 45%;
+    background: beige linear-gradient(
+            90deg,
+            rgba(59, 53, 171, 1) 0%,
+            rgba(9, 9, 121, 1) 36%,
+            rgba(32, 93, 106, 1) 100%
+    );
+    position: relative;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p {
+    font-size: 9px;
+    margin-top: 5px;
+}
+.content img {
+    width: 40px;
+    position: absolute;
+    animation: rocket 3s ease-in-out infinite;
+}
+
+.rightDiv {
+    height: 100%;
+    width: 65%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.rightDiv::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 100%;
+    background-color: blueviolet;
+    border-top-left-radius: 70%;
+    border-bottom-left-radius: 70%;
+    background-color: white;
+
+    mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+@keyframes rocket {
+    0% {
+        top: -40px;
+    }
+
+    50% {
+        top: -60px;
+    }
+    100% {
+        top: -40px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .loginFormContainer {
+            height: 90%;
+            width: 90%;
+        }
+
+        .content {
+            top: 10%;
+        }
+
+        .leftDiv {
+            height: 100%;
+            width: 100%;
+        }
+
+        .rightDiv {
+            padding-right: 20px;
+        }
+
+        .rightDiv::after {
+            left: -20px;
+            width: 20px;
+        }
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)  FIXXXX*/
+
+@media only screen and (min-width: 600px) {
+    .loginFormContainer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .content {
+        top: 10%;
+    }
+
+    .leftDiv {
+        height: 100%;
+        width: 100%;
+    }
+
+    .rightDiv {
+        padding-right: 50px;
+    }
+
+    .rightDiv::after {
+        left: -50px;
+        width: 50px;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .loginFormContainer {
+        height: 100%;
+        width: 100%;
+    }
+
+    .content {
+        top: 13.5%;
+    }
+
+    .leftDiv {
+        height: 100%;
+        width: 100%;
+    }
+
+    .rightDiv {
+        padding-right: 50px;
+    }
+
+    .rightDiv::after {
+        left: -50px;
+        width: 50px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) ORIGINAL */
+@media only screen and (min-width: 992px) {
+    .loginFormContainer {
+        height: 45%;
+        width: 60%;
+    }
+
+    .content {
+        top: 35%;
+    }
+
+    .leftDiv {
+        width: 45%;
+        height: 100%;
+    }
+
+    .rightDiv {
+        padding-right: 0px;
+    }
+
+    .rightDiv::after {
+        left: -50px;
+        width: 50px;
+    }
+}
+
+/* iphone 5 */
+@media only screen and (min-width: 320px) {
+    .loginFormContainer {
+        height: 90%;
+        width: 100%;
+    }
+
+    .inputbox {
+        padding-left: 15px;
+    }
+
+    .content {
+        top: 15%;
+        left: 10%;
+    }
+
+    .leftDiv {
+        width: 100%;
+        height: 100%;
+    }
+
+    .rightDiv {
+        padding-right: 30px;
+    }
+
+    .rightDiv::after {
+        left: -8px;
+        width: 8px;
+    }
+}
+
+/* surface duo */
+@media only screen and (min-width: 450px) {
+    .loginFormContainer {
+        height: 90%;
+        width: 90%;
+    }
+
+    .content {
+        top: 15%;
+    }
+
+    .leftDiv {
+
+    }
+
+    .rightDiv {
+        padding-right: 50px;
+    }
+
+    .rightDiv::after {
+        left: -35px;
+        width: 35px;
+    }
+}
+
+/* surface duo */
+@media only screen and (min-width: 1024px) {
+    .loginFormContainer {
+        height: 90%;
+        width: 90%;
+    }
+
+    .content {
+        top: 15%;
+    }
+
+    .leftDiv {
+
+    }
+
+    .rightDiv {
+        padding-right: 50px;
+    }
+
+    .rightDiv::after {
+        left: -100px;
+        width: 100px;
+    }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .loginFormContainer {
+        height: 45%;
+        width: 60%;
+
+    }
+
+    .spacing {
+        padding-bottom: 100px !important;
+    }
+
+    .leftDiv {
+        width: 45%;
+        height: 100%;
+    }
+
+    .content {
+        top: 35%;
+    }
+
+    .rightDiv {
+        padding-right: 0px;
+    }
+
+    .rightDiv::after {
+        left: -50px;
+        width: 50px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 3000px) {
+    .loginFormContainer {
+        height: 90%;
+        width: 90%;
+    }
+
+    .spacing {
+        padding-bottom: 100px !important;
+    }
+
+    .leftDiv {
+        width: 45%;
+        height: 100%;
+    }
+
+    .content {
+        top: 35%;
+    }
+
+    .rightDiv {
+        padding-right: 0px;
+    }
+
+    .rightDiv::after {
+        left: -90px;
+        width: 90px;
+    }
+}
