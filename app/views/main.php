@@ -47,18 +47,26 @@
             <a class="nav-link active" href="<?php echo ROOT_URL; ?>/users/login">Login</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link active" href="<?php echo ROOT_URL; ?>/users/register">Register</a>
+            <a class="nav-link active" href="<?php echo ROOT_URL; ?>/register">Register</a>
         </li>
+    </ul>
 </nav>
 <!-- Navbar -->
 
+<nav class="navbar noselect" style="border-bottom: 4px solid #0A1172">
+    <a class="navbar-brand" href="http://localhost/grizzhacks/public" id="no-link">Grizzhacks 5</a>
+    <ul class="nav justify-content-end">
+<?php
+navbar(); ?>
+    </ul>
+</nav>
 
 
 <!-- container -->
 <main id="swup" class="Site-content transition-fade">
 <div class="container">
+     require($view);
 
-    <?php require($view); ?>
 </div>
 </main>
 <!-- /container -->
