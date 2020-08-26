@@ -39,25 +39,16 @@
 <body class="Site">
 
 <!-- Navbar -->
-<nav class="navbar noselect" style="border-bottom: 4px solid #0A1172">
-    <a class="navbar-brand" href="<?php echo ROOT_URL; ?>" id="no-link">Grizzhacks 5</a>
 
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link active" href="<?php echo ROOT_URL; ?>/users/login">Login</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link active" href="<?php echo ROOT_URL; ?>/register">Register</a>
-        </li>
-    </ul>
-</nav>
 <!-- Navbar -->
 
 <nav class="navbar noselect" style="border-bottom: 4px solid #0A1172">
     <a class="navbar-brand" href="http://localhost/grizzhacks/public" id="no-link">Grizzhacks 5</a>
     <ul class="nav justify-content-end">
-<?php
-navbar(); ?>
+        <?php
+        navbar($items = array("Register","Register","test3"));
+        navbar($items = array("Login","Login","test3"));
+        ?>
     </ul>
 </nav>
 
@@ -65,8 +56,7 @@ navbar(); ?>
 <!-- container -->
 <main id="swup" class="Site-content transition-fade">
 <div class="container">
-     require($view);
-
+     <?php include_once($view); ?>
 </div>
 </main>
 <!-- /container -->

@@ -3,12 +3,17 @@ $path = $_SERVER['SCRIPT_NAME'];
 
 
 switch ($path) {
-    case "3":
-    echo "rwrw";
+    case ROOT_PAGE.'index.php':
+    $view = "index";
+    break;
+
+    case ROOT_PAGE.'register/index.php':
+    $view = "../../app/views/register/index.php";
     break;
 
     default:
-        echo $path;
+        $view = "default";
         break;
 
 }
+
