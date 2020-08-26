@@ -28,12 +28,12 @@ $(document).ready(function () {
 //IF YES IS CLICKED!
     $(document).on("click",".yes",function(){
         $('#signin-or-up').modal('hide');
-        location.href = "users/login";
+        location.href = "login";
     });
 //IF NO IS CLICKED!
     $(document).on("click",".no",function(){
         $('#signin-or-up').modal('hide');
-        location.href = "users/register";
+        location.href = "register";
     });
 
 

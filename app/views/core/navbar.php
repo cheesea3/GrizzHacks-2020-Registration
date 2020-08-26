@@ -19,7 +19,7 @@
             //if the current_page matches value[1] then display this, active difference.
             if ($CURRENT_PAGE == "$value[1]") {
                 $navlinks = '
-                    <li class="nav-item active">
+                    <li class="nav-item-active">
                         <a class="nav-link" href="' . $value[0] . '"> 
                             <i class="' . $value[2] . '"></i> 
                             ' . $value[1] . '  

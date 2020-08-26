@@ -46,8 +46,8 @@
     <a class="navbar-brand" href="http://localhost/grizzhacks/public" id="no-link">Grizzhacks 5</a>
     <ul class="nav justify-content-end">
         <?php
-        navbar($items = array("Register","Register","test3"));
-        navbar($items = array("Login","Login","test3"));
+        navbar($items = array(ROOT_PAGE."register","Register","test3"));
+        navbar($items = array(ROOT_PAGE."login","Login","test3"));
         ?>
     </ul>
 </nav>
